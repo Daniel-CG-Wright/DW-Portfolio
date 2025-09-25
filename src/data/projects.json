@@ -1,0 +1,28 @@
+[
+  {
+    "title": "Cubies",
+    "description": "2.5D voxel game prototype inspired by classic blockbuilding games such as The Blockheads. Implements procedural world generation with temperature and humidity-based biomes, simple physics, and an editable terrain pipeline.",
+    "tags": ["Unity", "C#", "Procedural Generation", "2.5D", "Voxels"],
+    "images": ["/images/cubies/biomes.png", "/images/cubies/voxel_demo.png"]
+  },
+  {
+    "title": "Aviawork",
+    "description": "Business workflow web app with role/category-driven permissions. Frontend built in Next.js + TypeScript; backend microservices in ASP.NET Core running on Azure Kubernetes Service. Features job allocation, role enums preservation, and audit logging.",
+    "tags": ["Next.js", "TypeScript", "ASP.NET Core", "Azure AKS", "Microservices"],
+    "images": ["/images/aviawork/dashboard.png"],
+    "isFeatured": true
+  },
+  {
+    "title": "Perpetual Inventory and Order Management System",
+    "organisation": "Springwood Enterprises Limited",
+    "description": "",
+    "tags": ["AWS", "JavaScript", "Ragic", "PII handling"],
+    "isFeatured": true
+  },
+  {
+    "title": "Stress and Productivity Management System",
+    "organisation": "Iremia",
+    "description": "",
+    "tags": ["Machine Learning", "Python", "C++", "Windows Accessibility API"]
+  }
+]
