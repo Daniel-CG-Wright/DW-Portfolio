@@ -26,7 +26,8 @@
     "title": "Stress and Productivity Management System",
     "organisation": "Iremia",
     "description": "A startup that Max Cole and I pitched at the Shard in the Warwick Kickstart event, as well as being invited to YCombinator Europe's networking event for.\nIt used custom neural networks to perform emotion recognition from people's faces and their messages (which would have come in from Teams, emails or Slack), and this would have been processed to predict burnout.\nWhilst it had potential, the privacy issues and technical difficulty led to its dissolution.",
-    "tags": ["Machine Learning", "Python", "C++", "Windows Accessibility API"]
+    "tags": ["Machine Learning", "Python", "C++", "Windows Accessibility API"],
+    "images": ["/public/Iremia/p1.png", "/public/Iremia/p2.png"]
   },
   {
     "title": "The Junction Modeller",
