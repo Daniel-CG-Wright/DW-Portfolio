@@ -1,4 +1,4 @@
-import React, { type JSX } from 'react';
+import { type JSX } from 'react';
 import { Card, Badge, Carousel } from 'react-bootstrap';
 import type { Project } from '../types';
 
@@ -20,7 +20,7 @@ export default function ProjectCard({ project }: { project: Project }): JSX.Elem
           <span className="ribbon" aria-hidden="true">WIP</span>
         ) : null}
 
-        {hasImages ? (
+        {hasImages && (
           <Carousel
             indicators={project.images!.length > 1}
             controls={project.images!.length > 1}
@@ -35,13 +35,6 @@ export default function ProjectCard({ project }: { project: Project }): JSX.Elem
               </Carousel.Item>
             ))}
           </Carousel>
-        ) : (
-          <div className="project-card-placeholder">
-            <div>
-              <strong>No preview</strong>
-              <div style={{ fontSize: '0.85rem', marginTop: 6 }}>{project.tags?.slice(0, 3).join(' • ')}</div>
-            </div>
-          </div>
         )}
       </div>
 

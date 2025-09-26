@@ -1,9 +1,8 @@
 
-import React, { type JSX } from 'react';
+import { type JSX } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import ProjectCard from './ProjectCard';
 import type { Project } from '../types';
-import projectsData from '../data/projects.json';
 
 /**
  * Portfolio component - lists all the projects in a responsive grid.
