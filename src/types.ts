@@ -5,4 +5,6 @@ export interface Project {
     tags: string[];
     images?: string[];
     isFeatured?: boolean;
+    url?: string;
+    indev?: boolean;
 }

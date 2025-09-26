@@ -1,5 +1,5 @@
 import React, { type JSX } from 'react';
-import { Card, Button, Badge } from 'react-bootstrap';
+import { Card, Button, Badge, CardLink } from 'react-bootstrap';
 import type { Project } from '../types';
 
 /**
@@ -13,7 +13,7 @@ export default function ProjectCard({ project }: { project: Project }): JSX.Elem
     return (
         <Card className="h-100 shadow-sm">
             <Card.Body className="d-flex flex-column">
-                <Card.Title>{project.title}</Card.Title>
+                <Card.Title><CardLink href={project.url}>{project.title}</CardLink></Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">{project.organisation || "Personal Project"}</Card.Subtitle>
                 <Card.Text className="text-muted small">{project.description}</Card.Text>
 

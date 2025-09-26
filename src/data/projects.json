@@ -1,28 +1,79 @@
 [
   {
-    "title": "Cubies",
-    "description": "2.5D voxel game prototype inspired by classic blockbuilding games such as The Blockheads. Implements procedural world generation with temperature and humidity-based biomes, simple physics, and an editable terrain pipeline.",
-    "tags": ["Unity", "C#", "Procedural Generation", "2.5D", "Voxels"],
-    "images": ["/images/cubies/biomes.png", "/images/cubies/voxel_demo.png"]
-  },
-  {
-    "title": "Aviawork",
-    "description": "Business workflow web app with role/category-driven permissions. Frontend built in Next.js + TypeScript; backend microservices in ASP.NET Core running on Azure Kubernetes Service. Features job allocation, role enums preservation, and audit logging.",
+    "title": "Kogo Creative's Web Project",
+    "description": "A web application designed to connect aviation-related businesses together, allowing them to create projects which other supplying companies can complete, and job posts for new hires.\nA C# microservices backend using Azure Kubernetes service, along with SQL storage in Azure and initially a Next.JS frontend, before switching to Wix for UX and design speed and simplifying the backend.",
     "tags": ["Next.js", "TypeScript", "ASP.NET Core", "Azure AKS", "Microservices"],
     "images": ["/images/aviawork/dashboard.png"],
-    "isFeatured": true
+    "isFeatured": true,
+    "indev": true
   },
   {
     "title": "Perpetual Inventory and Order Management System",
     "organisation": "Springwood Enterprises Limited",
-    "description": "",
-    "tags": ["AWS", "JavaScript", "Ragic", "PII handling"],
-    "isFeatured": true
+    "description": "My first professional project. Uses webhooks and APIs to funnel order data into AWS Lambda functions (using SQS to preserve failed order processing), which are then sent to Ragic via the API to be stored, and trigger inventory updates.",
+    "tags": ["AWS", "JavaScript", "Ragic", "PII handling", "REST", "Webhooks"],
+    "isFeatured": true 
   },
+  {
+    "title": "NoteTek",
+    "organisation": "UoW 3rd year project",
+    "description": "For my third-year project, I am developing a note-taking software focused on STEM students, as STEM lectures tend to be fast-paced, packed with definitions and key concepts to remember, and therefore a simple blank document type of note-taking app can be less efficient.\nUsing pedagogical research and strengths and weaknesses of other note-taking applications I am developing a hopefully superior product.",
+    "tags": ["Vite", "React", "C#", "ASP.NET Core", "REST", "SQL"],
+    "isFeatured": true,
+    "indev": true
+},
   {
     "title": "Stress and Productivity Management System",
     "organisation": "Iremia",
-    "description": "",
+    "description": "A startup that Max Cole and I pitched at the Shard in the Warwick Kickstart event, as well as being invited to YCombinator Europe's networking event for.\nIt used custom neural networks to perform emotion recognition from people's faces and their messages (which would have come in from Teams, emails or Slack), and this would have been processed to predict burnout.\nWhilst it had potential, the privacy issues and technical difficulty led to its dissolution.",
     "tags": ["Machine Learning", "Python", "C++", "Windows Accessibility API"]
+  },
+  {
+    "title": "The Junction Modeller",
+    "organisation": "Group 35",
+    "description": "Our second-year software engineering project, which we won an award for best project overall in the year.\nWe were tasked to build a junction modelling application with configurable parameters, and Dorset Software (the sponsor and judges) particularly liked the configurable number of exits.\nIt was built with a Java Spring Boot backend and Vite React frontend, and implemented CI/CD to test, build and Dockerise it, and automated testing.",
+    "tags": ["Java", "Spring Boot", "React", "Vite", "JUnit"],
+    "url": "https://rshields.xyz/jm/"
+  },
+  {
+    "title": "IDR Data Processor",
+    "organisation": "UoW IDR",
+    "description": "A contract with the University of Warwick's Interdisciplinary Research Directory, requiring researcher profiles to be transferred from Excel documents to a Sitebuilder database.\nThis was done using an easily-usable, simple Electron app.\nOther work included adding data from the OpenAlex research database to retrieve most recent publications by members, and spotlight random members.\nThe signup form also got a creative workaround to deal with Sitebuilder's lack of a proper API, and add users to the database automatically, rather than requiring manual intervention.",
+    "tags": ["React", "Electron", "Warwick Sitebuilder", "HTML", "CSS"],
+    "isFeatured": true
+  },
+  {
+    "title": "Cubies",
+    "description": "A 2.5D voxel game prototype inspired by classic blockbuilding games such as The Blockheads. Implements procedural world generation with temperature and humidity-based biomes, player control of multiple characters, and an editable terrain pipeline.",
+    "tags": ["Unity", "C#", "Procedural Generation", "2.5D", "Voxels"],
+    "images": ["/images/cubies/biomes.png", "/images/cubies/voxel_demo.png"],
+    "indev": true
+  },
+  {
+    "title": "FPS Game",
+    "description": "An FPS game I developed with my friend Morgan, where he designed 3D models and I developed the code for the game in Unreal Engine.\nI implemented full competitive lag-correction technologies like server rewind, and player and weapon controls.\nThe project was canned due to the massive amount of map and 3D model design we realised we'd need, and the burnout I experienced from developing such complex techniques without being able to see their effect due to the lack of lag in testing. Although it worked when lag was simulated.",
+    "tags": ["C++", "UE4"]
+  },
+  {
+    "title": "Stock News Digest",
+    "description": "A short hobby project developed as a proof of concept. The concept was proved not to work.\nIt collected up-to-datefinancial news from various sources across the web, and fed this along with current stock prices to a neural network which was supposed to advise which stocks to buy, sell and hold. However, this AI did not have any better results than not using it.\nWe then built a Next.JS website to display the results, but it was not completed.",
+    "tags": ["Machine Learning","Next.js", "React", "REST", "Web Scraping"]
+  },
+  {
+    "title": "ACS",
+    "organisation": "1st Year Coursework",
+    "description": "My first year web-development coursework. It was a ticket ordering site for live events. Built from the ground up using Flask and Python, which I was not familar with, but the end result got me 94%, and was around half the module's worth.\nInteresting features included storage and editing of venues as well as events, ticket types for each venue, and a countdown when checking out, inspired by AXS and Ticketmaster.",
+    "tags": ["Flask", "Python", "SQLite"]
+  },
+  {
+    "title": "Exam Question Database",
+    "description": "A couple of months before my A-level exams, I got fed up of searching everywhere for questions to use in my own revision and tutoring of a fellow student.\nI created a program which automatically dissected question paper PDFs and their corresponding markschemes into individual questions stored in an SQL database, and created a PyQT5 GUI to search and sort these questions.\nLater features allowed for auto-generation of question papers following real paper patterns, and support for many more subjects other than A-level CS, including GCSE maths, which came with support for diagrams.\nThis is still one of my favorite projects I've undertaken, not least because of how useful it was, and as a result I tried giving it a Next.JS interface after A-levels, and entered talks to sell it to Eduqas to replace their outdated question bank.",
+    "tags": ["Python", "SQLite", "Next.js", "OCR", "PyQT5"]
+  },
+  {
+    "title": "Flight Lesson Booking System",
+    "organisation": "A-level Coursework",
+    "description": "For my A-level coursework which earned 100%, I created a system which had a frontend in PyQT5, and allowed configuration and display of aircraft, instructors and lessons booked in, all of which were stored in the SQL database.\nFeatures which I liked included table and calendar views for individual instructor availability as well as booking density measurements on a given day and time across the school as a whole.",
+    "tags": ["Python", "PyQT5", "MS SQL Server"]
   }
 ]
