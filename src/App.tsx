@@ -1,6 +1,7 @@
 import './App.css'
-import { Navbar, NavLink } from 'react-bootstrap'
+import { Container, Navbar, NavbarBrand, NavLink } from 'react-bootstrap'
 import Portfolio from './components/Portfolio'
+import projects from './data/projects.json';
 
 function App() {
 
@@ -8,19 +9,23 @@ function App() {
     <>
       <header>
         <Navbar>
-          Daniel Wright's website
-          <NavLink href="#About">
-            About Me
-          </NavLink>
-          <NavLink href="#Portfolio">
-            My Portfolio
-          </NavLink>
-          <NavLink href="#Contact">
-            Contact Me
-          </NavLink>
+          <Container>
+            <NavbarBrand>
+              <b>Daniel Wright</b>
+            </NavbarBrand>
+            <NavLink href="#About">
+              About Me
+            </NavLink>
+            <NavLink href="#Portfolio">
+              My Portfolio
+            </NavLink>
+            <NavLink href="#Contact">
+              Contact Me
+            </NavLink>
+          </Container>
         </Navbar>
       </header>
-      <body>
+      <div>
         <h1>
           Welcome to my Website
         </h1>
@@ -33,7 +38,7 @@ function App() {
               Hi! I'm Daniel Wright, a student of Computer Science at the University of Warwick. I am currently looking at beginning my career in <b>Software Engineering</b>,
               and in the future I may consider moving to a role in <b>Software Project Management</b> - my uncle took a similar route with conventional engineering.
               <br/>
-              I come from Trinidad and Tobago but am a British Citizen, and am always looking for new opportunities to meet new people and solve problems with my skillset.
+              I'm a British citizen born in Trinidad and Tobago', and am always looking for new opportunities to meet new people and solve problems with my skillset.
             </p>
           <h3>My Journey</h3>
             <p>
@@ -58,8 +63,8 @@ function App() {
               In my spare time I like to do scale modelling, make my hobby projects, do target rifle and clay pigeon shooting, and go swimming.
             </p>
           
-          <Portfolio/>
-      </body>
+          <Portfolio projects={projects} />
+      </div>
     </>
   )
 }

@@ -27,7 +27,7 @@
     "organisation": "Iremia",
     "description": "A startup that Max Cole and I pitched at the Shard in the Warwick Kickstart event, as well as being invited to YCombinator Europe's networking event for.\nIt used custom neural networks to perform emotion recognition from people's faces and their messages (which would have come in from Teams, emails or Slack), and this would have been processed to predict burnout.\nWhilst it had potential, the privacy issues and technical difficulty led to its dissolution.",
     "tags": ["Machine Learning", "Python", "C++", "Windows Accessibility API"],
-    "images": ["/public/Iremia/p1.png", "/public/Iremia/p2.png"]
+    "images": ["/Iremia/p1.png", "/Iremia/p2.png"]
   },
   {
     "title": "The Junction Modeller",
@@ -35,7 +35,7 @@
     "description": "Our second-year software engineering project, which we won an award for best project overall in the year.\nWe were tasked to build a junction modelling application with configurable parameters, and Dorset Software (the sponsor and judges) particularly liked the configurable number of exits.\nIt was built with a Java Spring Boot backend and Vite React frontend, and implemented CI/CD to test, build and Dockerise it, and automated testing.",
     "tags": ["Java", "Spring Boot", "React", "Vite", "JUnit"],
     "url": "https://rshields.xyz/jm/",
-    "images": ["/public/JM/Config.png", "/public/JM/Junction.png"]
+    "images": ["/JM/Config.png", "/JM/Junction.png"]
   },
   {
     "title": "IDR Data Processor",
@@ -43,7 +43,7 @@
     "description": "A contract with the University of Warwick's Interdisciplinary Research Directory, requiring researcher profiles to be transferred from Excel documents to a Sitebuilder database.\nThis was done using an easily-usable, simple Electron app.\nOther work included adding data from the OpenAlex research database to retrieve most recent publications by members, and spotlight random members.\nThe signup form also got a creative workaround to deal with Sitebuilder's lack of a proper API, and add users to the database automatically, rather than requiring manual intervention.",
     "tags": ["React", "Electron", "Warwick Sitebuilder", "HTML", "CSS"],
     "isFeatured": true,
-    "images": ["/public/IDR/Directory.png"]
+    "images": ["/IDR/Directory.png"]
   },
   {
     "title": "Cubies",
@@ -71,13 +71,13 @@
     "title": "Exam Question Database",
     "description": "A couple of months before my A-level exams, I got fed up of searching everywhere for questions to use in my own revision and tutoring of a fellow student.\nI created a program which automatically dissected question paper PDFs and their corresponding markschemes into individual questions stored in an SQL database, and created a PyQT5 GUI to search and sort these questions.\nLater features allowed for auto-generation of question papers following real paper patterns, and support for many more subjects other than A-level CS, including GCSE maths, which came with support for diagrams.\nThis is still one of my favorite projects I've undertaken, not least because of how useful it was, and as a result I tried giving it a Next.JS interface after A-levels, and entered talks to sell it to Eduqas to replace their outdated question bank.",
     "tags": ["Python", "SQLite", "Next.js", "OCR", "PyQT5"],
-    "images": ["/public/ExamPaperProject/Main Menu.png", "/public/ExamPaperProject/Paper Generator", "/public/ExamPaperProject/Random Question Generator"]
+    "images": ["/ExamPaperProject/Main Menu.png", "/ExamPaperProject/Paper Generator", "/ExamPaperProject/Random Question Generator"]
   },
   {
     "title": "Flight Lesson Booking System",
     "organisation": "A-level Coursework",
     "description": "For my A-level coursework which earned 100%, I created a system which had a frontend in PyQT5, and allowed configuration and display of aircraft, instructors and lessons booked in, all of which were stored in the SQL database.\nFeatures which I liked included table and calendar views for individual instructor availability as well as booking density measurements on a given day and time across the school as a whole.",
     "tags": ["Python", "PyQT5", "MS SQL Server"],
-    "images": ["/public/a-level/Main Menu.png", "/public/a-level/Timetable.png", "/public/a-level/Calendar.png", "/public/a-level/Timesheet.png"]
+    "images": ["/a-level/Main Menu.png", "/a-level/Timetable.png", "/a-level/Calendar.png", "/a-level/Timesheet.png"]
   }
 ]
