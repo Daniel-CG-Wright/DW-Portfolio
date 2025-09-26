@@ -26,12 +26,15 @@ function App() {
         </Navbar>
       </header>
       <div>
-        <h1>
-          Welcome to my Website
-        </h1>
+        <section className="title-section">
+          <h1 className='text-center'>
+            Welcome to my Website
+          </h1>
           <p>
             This is my portfolio website. Here I showcase the projects I've worked on, both professionally and personally.
           </p>
+        </section>
+        
         <h2>About Me</h2>
           <h3>Who am I?</h3>
             <p>

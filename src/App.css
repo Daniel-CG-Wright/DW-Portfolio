@@ -1,6 +1,9 @@
-#root {
-  margin: 0 auto;
-  text-align: center;
+
+h1, h2, h3, h4 {
+  margin: 10px;
+}
+p {
+  margin: 1em;
 }
 
 .logo {
@@ -92,7 +95,13 @@
 .navbar {
   background-color: white;
   margin: 2rem;
-  border-radius: 20px;
-  box-shadow: #334 2px;
-  
+  border-radius: 30px;
+  box-shadow: 0 4px 16px purple;
+  text-align: left;
+  width: 50%;
+  padding-inline: 2em;
+}
+
+.title-section {
+  background-image: image("")
 }
