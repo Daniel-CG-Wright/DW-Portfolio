@@ -33,20 +33,21 @@
     "organisation": "Group 35",
     "description": "Our second-year software engineering project, which we won an award for best project overall in the year.\nWe were tasked to build a junction modelling application with configurable parameters, and Dorset Software (the sponsor and judges) particularly liked the configurable number of exits.\nIt was built with a Java Spring Boot backend and Vite React frontend, and implemented CI/CD to test, build and Dockerise it, and automated testing.",
     "tags": ["Java", "Spring Boot", "React", "Vite", "JUnit"],
-    "url": "https://rshields.xyz/jm/"
+    "url": "https://rshields.xyz/jm/",
+    "images": ["/public/JM/Config.png", "/public/JM/Junction.png"]
   },
   {
     "title": "IDR Data Processor",
     "organisation": "UoW IDR",
     "description": "A contract with the University of Warwick's Interdisciplinary Research Directory, requiring researcher profiles to be transferred from Excel documents to a Sitebuilder database.\nThis was done using an easily-usable, simple Electron app.\nOther work included adding data from the OpenAlex research database to retrieve most recent publications by members, and spotlight random members.\nThe signup form also got a creative workaround to deal with Sitebuilder's lack of a proper API, and add users to the database automatically, rather than requiring manual intervention.",
     "tags": ["React", "Electron", "Warwick Sitebuilder", "HTML", "CSS"],
-    "isFeatured": true
+    "isFeatured": true,
+    "images": ["/public/IDR/Directory.png"]
   },
   {
     "title": "Cubies",
     "description": "A 2.5D voxel game prototype inspired by classic blockbuilding games such as The Blockheads. Implements procedural world generation with temperature and humidity-based biomes, player control of multiple characters, and an editable terrain pipeline.",
     "tags": ["Unity", "C#", "Procedural Generation", "2.5D", "Voxels"],
-    "images": ["/images/cubies/biomes.png", "/images/cubies/voxel_demo.png"],
     "indev": true
   },
   {
@@ -68,12 +69,14 @@
   {
     "title": "Exam Question Database",
     "description": "A couple of months before my A-level exams, I got fed up of searching everywhere for questions to use in my own revision and tutoring of a fellow student.\nI created a program which automatically dissected question paper PDFs and their corresponding markschemes into individual questions stored in an SQL database, and created a PyQT5 GUI to search and sort these questions.\nLater features allowed for auto-generation of question papers following real paper patterns, and support for many more subjects other than A-level CS, including GCSE maths, which came with support for diagrams.\nThis is still one of my favorite projects I've undertaken, not least because of how useful it was, and as a result I tried giving it a Next.JS interface after A-levels, and entered talks to sell it to Eduqas to replace their outdated question bank.",
-    "tags": ["Python", "SQLite", "Next.js", "OCR", "PyQT5"]
+    "tags": ["Python", "SQLite", "Next.js", "OCR", "PyQT5"],
+    "images": ["/public/ExamPaperProject/Main Menu.png", "/public/ExamPaperProject/Paper Generator", "/public/ExamPaperProject/Random Question Generator"]
   },
   {
     "title": "Flight Lesson Booking System",
     "organisation": "A-level Coursework",
     "description": "For my A-level coursework which earned 100%, I created a system which had a frontend in PyQT5, and allowed configuration and display of aircraft, instructors and lessons booked in, all of which were stored in the SQL database.\nFeatures which I liked included table and calendar views for individual instructor availability as well as booking density measurements on a given day and time across the school as a whole.",
-    "tags": ["Python", "PyQT5", "MS SQL Server"]
+    "tags": ["Python", "PyQT5", "MS SQL Server"],
+    "images": ["/public/a-level/Main Menu.png", "/public/a-level/Timetable.png", "/public/a-level/Calendar.png", "/public/a-level/Timesheet.png"]
   }
 ]
