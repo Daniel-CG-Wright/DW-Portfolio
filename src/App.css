@@ -1,9 +1,8 @@
-
-h1, h2, h3, h4 {
-  margin: 10px;
+#root {
+  background-color: rgb(0 0 0 / 0.85);
 }
-p {
-  margin: 1em;
+h1, h2, h3, h4 {
+  padding-inline: 10px;
 }
 
 .logo {
@@ -45,13 +44,14 @@ p {
 .project-card { 
   min-height: 420px;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
 }
 
 .project-card .card-body { 
   display: flex;
   flex-direction: column;
   height: 100%; 
+  text-align: left;
 }
 
 /* Ribbon */
@@ -85,23 +85,70 @@ p {
 .row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: left;
 }
 .row > .col {
-  flex: 1 1 200px; /* or your min width */
-  max-width: 300px;
+  flex: 1 1 20em; /* or your min width */
+  max-width: 30em;
 }
 
-.navbar {
+h2 {
+  text-align: center;
+  border-bottom-width: 1px;
+  border-bottom-color: white;
+  border-bottom-style: inset;
+}
+
+#navbar-section {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  margin-bottom: 1em;
+}
+
+#navbar {
   background-color: white;
-  margin: 2rem;
-  border-radius: 30px;
   box-shadow: 0 4px 16px purple;
+  border-radius: 30px;
   text-align: left;
   width: 50%;
   padding-inline: 2em;
+  margin-left: 5%;
 }
 
-.title-section {
-  background-image: image("")
+#title-section {
+  background-image: 
+    radial-gradient(rgb(0 0 0 / 0.2), rgb(0 0 0 / 0.5)),
+    url("/hero-background.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  min-height: 20em;
+  margin-inline: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+
+.subtitle {
+  font-weight: bold;
+  font-size: large;
+
+}
+
+section {
+  color: white;
+  
+}
+
+.text-section {
+  padding: 15%;
+}
+
+.narrow-body {
+  margin-inline: 10%;
 }

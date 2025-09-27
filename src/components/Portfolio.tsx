@@ -16,9 +16,9 @@ export default function Portfolio({ projects }: { projects?: Project[] } = {}): 
 
 
     return (
-        <Container className="my-5">
-            <h2 className="mb-4 text-center">Featured Projects</h2>
-            <Row xs={1} m={3} xl={5} className="g-4 mb-5">
+        <Container className="py-5" id="portfolio">
+            <h2 className="text-center border-bottom narrow-body pb-3">Featured Projects</h2>
+            <Row xs={1} m={3} xl={5} className="g-4 mb-5 pt-4">
                 {fallback.filter(p => p.isFeatured).map((project) => (
                 <Col key={project.title}>
                     <ProjectCard project={project} />
@@ -27,8 +27,8 @@ export default function Portfolio({ projects }: { projects?: Project[] } = {}): 
             </Row>
 
 
-            <h2 className="mb-4 text-center">My Projects</h2>
-            <Row xs={1} m={3} xl={5} className="g-4">
+            <h2 className="border-bottom text-center narrow-body pb-3">My Projects</h2>
+            <Row xs={1} m={3} className="g-4 pt-4">
                 {fallback.map((project) => (
                 <Col key={project.title}>
                     <ProjectCard project={project} />

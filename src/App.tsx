@@ -7,35 +7,35 @@ function App() {
 
   return (
     <>
-      <header>
-        <Navbar>
+      <span id="navbar-section">
+        <Navbar id="navbar">
           <Container>
             <NavbarBrand>
               <b>Daniel Wright</b>
             </NavbarBrand>
-            <NavLink href="#About">
+            <NavLink href="#about">
               About Me
             </NavLink>
-            <NavLink href="#Portfolio">
+            <NavLink href="#portfolio">
               My Portfolio
             </NavLink>
-            <NavLink href="#Contact">
+            <NavLink href="#contact">
               Contact Me
             </NavLink>
           </Container>
         </Navbar>
-      </header>
+      </span>
       <div>
-        <section className="title-section px-2">
-          <h1 className='text-center'>
+        <section className="px-2" id="title-section">
+          <h1 className=''>
             Welcome to my Website
           </h1>
-          <p>
+          <p className="subtitle">
             This is my portfolio website. Here I showcase the projects I've worked on, both professionally and personally.
           </p>
         </section>
-        <section className="px-10">
-          <h2 className="text-center">About Me</h2>
+        <section className="px-10 py-4 text-section">
+          <h2 id="about">About Me</h2>
             <h3>Who am I?</h3>
               <p>
                 Hi! I'm Daniel Wright, a student of Computer Science at the University of Warwick. I am currently looking at beginning my career in <b>Software Engineering</b>,
@@ -68,6 +68,11 @@ function App() {
         </section>
         <section>
           <Portfolio projects={projects} />
+        </section>
+        <section>
+          <h2>
+
+          </h2>
         </section>
       </div>
     </>
