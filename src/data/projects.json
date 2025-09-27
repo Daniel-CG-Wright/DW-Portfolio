@@ -1,9 +1,10 @@
 [
   {
-    "title": "Kogo Creative's Web Project",
+    "title": "Connecting the Aviation Industry",
+    "organisation": "Kogo Limited",
     "description": "A web application designed to connect aviation-related businesses together, allowing them to create projects which other supplying companies can complete, and job posts for new hires.\nA C# microservices backend using Azure Kubernetes service, along with SQL storage in Azure and initially a Next.JS frontend, before switching to Wix for UX and design speed and simplifying the backend.",
     "tags": ["Next.js", "TypeScript", "ASP.NET Core", "Azure AKS", "Microservices"],
-    "images": ["/images/aviawork/dashboard.png"],
+    "images": [],
     "isFeatured": true,
     "indev": true
   },
@@ -35,7 +36,7 @@
     "description": "Our second-year software engineering project, which we won an award for best project overall in the year.\nWe were tasked to build a junction modelling application with configurable parameters, and Dorset Software (the sponsor and judges) particularly liked the configurable number of exits.\nIt was built with a Java Spring Boot backend and Vite React frontend, and implemented CI/CD to test, build and Dockerise it, and automated testing.",
     "tags": ["Java", "Spring Boot", "React", "Vite", "JUnit"],
     "url": "https://rshields.xyz/jm/",
-    "images": ["/JM/Config.png", "/JM/Junction.png"]
+    "images": ["/JM/Config.png", "/JM/Junctions.png"]
   },
   {
     "title": "IDR Data Processor",
@@ -71,7 +72,7 @@
     "title": "Exam Question Database",
     "description": "A couple of months before my A-level exams, I got fed up of searching everywhere for questions to use in my own revision and tutoring of a fellow student.\nI created a program which automatically dissected question paper PDFs and their corresponding markschemes into individual questions stored in an SQL database, and created a PyQT5 GUI to search and sort these questions.\nLater features allowed for auto-generation of question papers following real paper patterns, and support for many more subjects other than A-level CS, including GCSE maths, which came with support for diagrams.\nThis is still one of my favorite projects I've undertaken, not least because of how useful it was, and as a result I tried giving it a Next.JS interface after A-levels, and entered talks to sell it to Eduqas to replace their outdated question bank.",
     "tags": ["Python", "SQLite", "Next.js", "OCR", "PyQT5"],
-    "images": ["/ExamPaperProject/Main Menu.png", "/ExamPaperProject/Paper Generator", "/ExamPaperProject/Random Question Generator"]
+    "images": ["/ExamPaperProject/Main Menu.png", "/ExamPaperProject/Paper Generator.png", "/ExamPaperProject/Random Question Generator.png"]
   },
   {
     "title": "Flight Lesson Booking System",

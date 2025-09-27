@@ -7,32 +7,34 @@ function App() {
 
   return (
     <>
-      <span id="navbar-section">
-        <Navbar id="navbar">
-          <Container>
-            <NavbarBrand>
-              <b>Daniel Wright</b>
-            </NavbarBrand>
-            <NavLink href="#about">
-              About Me
-            </NavLink>
-            <NavLink href="#portfolio">
-              My Portfolio
-            </NavLink>
-            <NavLink href="#contact">
-              Contact Me
-            </NavLink>
-          </Container>
-        </Navbar>
-      </span>
-      <div>
+    <div>
         <section className="px-2" id="title-section">
-          <h1 className=''>
-            Welcome to my Website
-          </h1>
-          <p className="subtitle">
-            This is my portfolio website. Here I showcase the projects I've worked on, both professionally and personally.
-          </p>
+          <div id="navbar-section">
+            <Navbar id="navbar">
+              <Container>
+                <NavbarBrand>
+                  <b>Daniel Wright</b>
+                </NavbarBrand>
+                <NavLink href="#about">
+                  About Me
+                </NavLink>
+                <NavLink href="#portfolio">
+                  My Portfolio
+                </NavLink>
+                <NavLink href="#contact">
+                  Contact Me
+                </NavLink>
+              </Container>
+            </Navbar>
+          </div>
+          <div id='title-text'>
+            <h1 className=''>
+              Welcome to my Website
+            </h1>
+            <p className="subtitle">
+              This is my portfolio website. Here I showcase the projects I've worked on, both professionally and personally.
+            </p>
+          </div>
         </section>
         <section className="px-10 py-4 text-section">
           <h2 id="about">About Me</h2>

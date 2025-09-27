@@ -1,5 +1,5 @@
 import { type JSX } from 'react';
-import { Card, Badge, Carousel } from 'react-bootstrap';
+import { Card, Carousel } from 'react-bootstrap';
 import type { Project } from '../types';
 
 /**
@@ -38,32 +38,35 @@ export default function ProjectCard({ project }: { project: Project }): JSX.Elem
         )}
       </div>
 
-      <Card.Body className="d-flex flex-column">
-        <Card.Title as="h3" style={{ fontSize: '1.125rem', marginBottom: 4 }}>
-          {project.url ? (
-            <Card.Link href={project.url} target="_blank" rel="noopener noreferrer">{project.title}</Card.Link>
-          ) : (
-            <span>{project.title}</span>
-          )}
-        </Card.Title>
+      <Card.Body className="d-flex flex-column bottom-divider">
+        <div className="bottom-divider mb-2">
+          <Card.Title as="h3" style={{ fontSize: '1.125rem', marginBottom: 4 }}>
+            {project.url ? (
+              <Card.Link href={project.url} target="_blank" rel="noopener noreferrer">{project.title}</Card.Link>
+            ) : (
+              <span>{project.title}</span>
+            )}
+          </Card.Title>
 
-        <Card.Subtitle className="mb-2 text-muted" style={{ fontSize: '0.9rem' }}>
-          {project.organisation ?? 'Personal Project'}
-        </Card.Subtitle>
+          <Card.Subtitle className="mb-2 text-muted" style={{ fontSize: '0.9rem' }}>
+            {project.organisation ?? 'Personal Project'}
+          </Card.Subtitle>
+        </div>
 
-        <Card.Text className="text-muted small line-clamp-3" aria-label={`Description: ${project.title}`}>
+        <Card.Text className="" aria-label={`Description: ${project.title}`}>
           {project.description}
         </Card.Text>
-
+      </Card.Body>
+      <Card.Footer>
         <div className="project-card-footer">
           <div className="mb-2" style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
             {project.tags?.map((tag) => (
-              <Badge bg="primary" key={tag} className="me-1">{tag}</Badge>
+              <span key={tag} className="skill">{tag}</span>
             ))}
 
           </div>
         </div>
-      </Card.Body>
+      </Card.Footer>
     </Card>
   );
 }
