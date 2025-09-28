@@ -1,6 +1,7 @@
 import { type JSX } from 'react';
 import { Card, Carousel } from 'react-bootstrap';
 import type { Project } from '../types';
+import SkillTags from './SkillTags';
 
 /**
 * ProjectCard
@@ -53,18 +54,13 @@ export default function ProjectCard({ project, modalCallback }: { project: Proje
           </Card.Subtitle>
         </div>
 
-        <Card.Text className="" aria-label={`Description: ${project.title}`}>
+        <Card.Text className="description" aria-label={`Description: ${project.title}`}>
           {project.description}
         </Card.Text>
       </Card.Body>
       <Card.Footer>
         <div className="project-card-footer">
-          <div className="mb-2" style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
-            {project.tags?.map((tag) => (
-              <span key={tag} className="skill">{tag}</span>
-            ))}
-
-          </div>
+          <SkillTags skills={project.tags} />
         </div>
       </Card.Footer>
     </Card>

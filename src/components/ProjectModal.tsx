@@ -1,6 +1,7 @@
 import type { JSX } from "react";
 import type { Project } from "../types";
-import { Carousel, Modal } from "react-bootstrap";
+import { Carousel, Modal, Stack } from "react-bootstrap";
+import SkillTags from "./SkillTags";
 
 /**
  * Modal component for projects - allows for expanding project to view on main screen.
@@ -18,7 +19,7 @@ export default function ProjectModal({ project, show, onHide }: { project: Proje
                             indicators={images.length > 1}
                             controls={images.length > 1}
                             interval={4000}
-                            className="project-card-carousel"
+                            className="modal-carousel"
                             aria-label={`${project.title} images`}
                         >
                             {images.map((src, i) => (
@@ -29,14 +30,37 @@ export default function ProjectModal({ project, show, onHide }: { project: Proje
                             ))}
                         </Carousel>
                     )}
-                    <Modal.Header>
-                        <Modal.Title as="h2">
-                            {project.title}
-                        </Modal.Title>
-                        <Modal.Title as="h4" className="subtitle">
-                            {project.organisation ?? "Personal Project"}
-                        </Modal.Title>
+                    <Modal.Header className="bottom-divider">
+                        <Stack>
+                            <Modal.Title as="h2">
+                                {project.title}
+                            </Modal.Title>
+                            <Modal.Title as="h4" className="subtitle text-center text-muted">
+                                {project.organisation ?? "Personal Project"}
+                            </Modal.Title>
+                            { project.url && <Modal.Title as="a" className="text-center" style={{ cursor: "pointer", maxWidth: "fit-content", marginInline: "auto"}}>
+                                {project.url}
+                            </Modal.Title>
+                            }
+                            { project.indev && <div className="modal-wip">
+                                WIP
+                            </div>
+                            }
+                        </Stack>
                     </Modal.Header>
+                    <Modal.Body className="bottom-divider">
+                        <p>
+                            {project.description
+                            .split("\n")                // split at newline
+                            .filter(line => line.trim()) // remove empty lines
+                            .map((para, i) => (
+                                <p key={i}>{para}</p>
+                            ))}
+                        </p>
+                    </Modal.Body>
+                    <Modal.Footer className="footer">
+                        <SkillTags skills={project.tags} />
+                    </Modal.Footer>
                 </Modal>
             }
         </>
