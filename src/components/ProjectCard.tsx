@@ -1,6 +1,7 @@
 import { type JSX } from 'react';
 import { Card, Carousel } from 'react-bootstrap';
 import type { Project } from '../types';
+import SkillTags from './SkillTags';
 
 /**
 * ProjectCard
@@ -9,26 +10,26 @@ import type { Project } from '../types';
 * @param {{project: Project}} props
 * @returns {JSX.Element}
 */
-export default function ProjectCard({ project }: { project: Project }): JSX.Element {
-  const hasImages = Array.isArray(project.images) && project.images.length > 0;
+export default function ProjectCard({ project, modalCallback }: { project: Project; modalCallback: () => void; }): JSX.Element {
+  const images = project?.images ?? [];
 
   return (
-    <Card className="h-100 shadow-sm project-card">
+    <Card onClick={modalCallback} className="h-100 shadow-sm project-card">
       {/* Top media area (image carousel or placeholder). The media wrapper is position:relative so the ribbon can attach to it. */}
       <div className="project-card-media">
         {project.indev ? (
           <span className="ribbon" aria-hidden="true">WIP</span>
         ) : null}
 
-        {hasImages && (
+        {images.length > 0 && (
           <Carousel
-            indicators={project.images!.length > 1}
-            controls={project.images!.length > 1}
+            indicators={images.length > 1}
+            controls={images.length > 1}
             interval={4000}
             className="project-card-carousel"
             aria-label={`${project.title} images`}
           >
-            {project.images!.map((src, i) => (
+            {images.map((src, i) => (
               <Carousel.Item key={i}>
                 {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
                 <img src={src} alt={`${project.title} screenshot ${i + 1}`} loading="lazy" />
@@ -53,18 +54,13 @@ export default function ProjectCard({ project }: { project: Project }): JSX.Elem
           </Card.Subtitle>
         </div>
 
-        <Card.Text className="" aria-label={`Description: ${project.title}`}>
+        <Card.Text className="description" aria-label={`Description: ${project.title}`}>
           {project.description}
         </Card.Text>
       </Card.Body>
       <Card.Footer>
         <div className="project-card-footer">
-          <div className="mb-2" style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
-            {project.tags?.map((tag) => (
-              <span key={tag} className="skill">{tag}</span>
-            ))}
-
-          </div>
+          <SkillTags skills={project.tags} />
         </div>
       </Card.Footer>
     </Card>

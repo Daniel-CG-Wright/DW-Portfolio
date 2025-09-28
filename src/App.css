@@ -43,9 +43,20 @@
   flex-direction: column;
   height: 100%; 
   text-align: left;
+  cursor: pointer;
 }
 
-/* Ribbon */
+.project-card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 32px 0 rgba(162, 89, 255, 0.25), 0 2px 8px 0 rgba(0,0,0,0.10);
+  transition: transform 0.2s cubic-bezier(0.4,0,0.2,1), box-shadow 0.2s cubic-bezier(0.4,0,0.2,1);
+}
+
+.project-card {
+  transition: transform 0.2s cubic-bezier(0.4,0,0.2,1), box-shadow 0.2s cubic-bezier(0.4,0,0.2,1);
+}
+
+/* WIP ribbon */
 .ribbon {
   position: absolute;
   top: 12px;
@@ -62,6 +73,33 @@
   letter-spacing: 0.04em;
 }
 
+.modal-wip {
+  background: #d69e2e;
+  color: #111;
+  padding: 0.25rem 0.6rem;
+  font-weight: 700;
+  font-size: 0.85rem;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  text-align: center;
+  max-width: fit-content;
+  margin-inline: auto;
+  margin-top: 0.5em;
+}
+
+.description {
+  white-space: pre-line;
+}
+
+.skill-tags {
+  margin-bottom: 2px;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
 .skill {
   background: radial-gradient(ellipse at top right, #e0b3ff 0%, #a259ff 40%, #6d28d9 100%);
   box-shadow: 0 2px 12px 0 #a259ff80, 0 0 8px 2px #fff3  inset;
@@ -72,6 +110,24 @@
   font-size: 0.8rem;
 }
 .project-card-carousel img { width: 100%; height: 220px; object-fit: cover; }
+.modal-carousel {
+  padding: 1px;
+  background: linear-gradient(135deg, #a259ff 0%, #e0b3ff 100%);
+  border-radius: 8px;
+  box-shadow: 0 0 16px 4px #a259ff80, 0 0 8px 2px #fff3 inset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-carousel img {
+  width: 100%; object-fit: cover;
+  border-radius: 8px;
+}
+
+.modal-dialog .modal-content {
+  border: none;
+}
+
 .badge-in-dev { background: #ffc107; color: #111; }
 @media (prefers-color-scheme: light) {
 .project-card-placeholder { background: linear-gradient(135deg,#f4f6fb,#eef3ff); color: #334; }
@@ -161,4 +217,9 @@ section {
 
 .contact-icon {
   width: 64px;
+}
+
+.footer {
+  justify-items: center;
+  justify-content: center;
 }
