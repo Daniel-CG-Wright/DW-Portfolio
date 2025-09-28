@@ -1,5 +1,5 @@
 import './App.css'
-import { Container, Navbar, NavbarBrand, NavLink } from 'react-bootstrap'
+import { Col, Container, Image, Navbar, NavbarBrand, NavLink, Row } from 'react-bootstrap'
 import Portfolio from './components/Portfolio'
 import projects from './data/projects.json';
 
@@ -29,7 +29,7 @@ function App() {
           </div>
           <div id='title-text'>
             <h1 className=''>
-              Welcome to my Website
+              Welcome to my website
             </h1>
             <p className="subtitle">
               This is my portfolio website. Here I showcase the projects I've worked on, both professionally and personally.
@@ -46,9 +46,6 @@ function App() {
                 I'm a British citizen born in Trinidad and Tobago', and am always looking for new opportunities to meet new people and solve problems with my skillset.
               </p>
             <h3>My Journey</h3>
-              <p>
-                I normally don't tell this story, because you probably have more interesting things to be doing. But if you're interested, read on...
-              </p>
               <p>
                 I began my software focus by learning basic JavaScript when I was 7 years old, on Khan Academy, thanks to my future-focused parents.
                 <br /> After being exposed to visual programming with Kodu and Scratch, I moved on to learn Python, starting in GCSE and practising it in many personal projects
@@ -68,13 +65,27 @@ function App() {
                 In my spare time I like to do scale modelling, make my hobby projects, do target rifle and clay pigeon shooting, and go swimming.
               </p>
         </section>
-        <section>
+        <section id="portfolio">
           <Portfolio projects={projects} />
         </section>
         <section>
-          <h2>
-
+          <h2 id="contact">
+            Contact Me
           </h2>
+          <Container>
+            <Row className="text-center">
+              <Col>
+                <a href="https://www.linkedin.com/in/danielcgwright/">
+                  <Image src="/LI-In-Bug.png" className="contact-icon"></Image>
+                </a>
+              </Col>
+              <Col>
+                <a href="https://github.com/Daniel-CG-Wright">
+                  <Image src="/github-mark-white.svg" className='contact-icon'></Image>
+                </a>
+              </Col>
+            </Row>
+          </Container>
         </section>
       </div>
     </>

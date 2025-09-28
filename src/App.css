@@ -215,6 +215,10 @@ section {
   margin-inline: 10%;
 }
 
+.contact-icon {
+  width: 64px;
+}
+
 .footer {
   justify-items: center;
   justify-content: center;
