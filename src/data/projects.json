@@ -1,8 +1,8 @@
 [
   {
-    "title": "Connecting the Aviation Industry",
+    "title": "A web application for the Aviation Community",
     "organisation": "Kogo Limited",
-    "description": "A web application designed to connect aviation-related businesses together, allowing them to create projects which other supplying companies can complete, and job posts for new hires.\nA C# microservices backend using Azure Kubernetes service, along with SQL storage in Azure and initially a Next.JS frontend, before switching to Wix for UX and design speed and simplifying the backend.",
+    "description": "A web application designed to serve the Aviation community. More details to follow on launch.\nA C# microservices backend using Azure Kubernetes service, along with SQL storage in Azure and initially a Next.JS frontend, before switching to Wix for UX and design speed and simplifying the backend.",
     "tags": ["Next.js", "TypeScript", "ASP.NET Core", "Azure AKS", "Microservices"],
     "images": [],
     "isFeatured": true,
