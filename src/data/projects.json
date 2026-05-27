@@ -1,10 +1,19 @@
 [
   {
-    "title": "A web application for the Aviation Community",
+    "title": "Hireable",
+    "organisation": "Hireable Ltd",
+    "description": "A career growth platform with functionality for both job seekers and recruiters, utilising cutting edge AI. Currently NDA-restricted.",
+    "tags": ["Next.js", "Firebase", "GCP", "LLMs"],
+    "isFeatured": true,
+    "indev": true
+  },
+  {
+    "title": "Aviawork",
     "organisation": "Kogo Limited",
     "description": "A web application designed to serve the Aviation community. More details to follow on launch.\nA C# microservices backend using Azure Kubernetes service, along with SQL storage in Azure and initially a Next.JS frontend, before switching to Wix for UX and design speed and simplifying the backend.",
     "tags": ["Next.js", "TypeScript", "ASP.NET Core", "Azure AKS", "Microservices"],
-    "images": [],
+    "url": "https://aviawork.com",
+    "images": ["/Aviawork/aviawork_main.PNG"],
     "isFeatured": true,
     "indev": true
   },
@@ -16,12 +25,13 @@
     "isFeatured": true 
   },
   {
-    "title": "NoteTek",
+    "title": "Synapse",
     "organisation": "UoW 3rd year project",
-    "description": "For my third-year project, I am developing a note-taking software focused on STEM students, as STEM lectures tend to be fast-paced, packed with definitions and key concepts to remember, and therefore a simple blank document type of note-taking app can be less efficient.\nUsing pedagogical research and strengths and weaknesses of other note-taking applications I am developing a hopefully superior product.",
-    "tags": ["Vite", "React", "C#", "ASP.NET Core", "REST", "SQL"],
-    "isFeatured": true,
-    "indev": true
+    "description": "A graph and linear based note-taking app which utilises NLP to automatically cluster and link concepts together, enhancing student understanding through pedagogically-backed techniques, storing data in a graph database.",
+    "tags": ["NLP", "Neo4j", "Next.js", "GraphQL", "Python"],
+    "url": "https://synapse-notes.com",
+    "images": ["/Synapse/synapse_main.PNG"],
+    "isFeatured": true
 },
   {
     "title": "Stress and Productivity Management System",
