@@ -10,7 +10,7 @@
   {
     "title": "Aviawork",
     "organisation": "Kogo Limited",
-    "description": "A web application designed to serve the Aviation community. More details to follow on launch.\nA C# microservices backend using Azure Kubernetes service, along with SQL storage in Azure and initially a Next.JS frontend, before switching to Wix for UX and design speed and simplifying the backend.",
+    "description": "A web application designed to serve the Aviation community by allowing companies to share and complete projects, and create job postings.\nDeveloped with a C# microservices backend using Azure Kubernetes service, along with SQL storage in Azure and initially a Next.JS frontend, before switching to Wix for UX and design speed and simplifying the backend.",
     "tags": ["Next.js", "TypeScript", "ASP.NET Core", "Azure AKS", "Microservices"],
     "url": "https://aviawork.com",
     "images": ["/Aviawork/aviawork_main.PNG"],
@@ -69,13 +69,13 @@
   },
   {
     "title": "Stock News Digest",
-    "description": "A short hobby project developed as a proof of concept. The concept was proved not to work.\nIt collected up-to-datefinancial news from various sources across the web, and fed this along with current stock prices to a neural network which was supposed to advise which stocks to buy, sell and hold. However, this AI did not have any better results than not using it.\nWe then built a Next.JS website to display the results, but it was not completed.",
+    "description": "A short hobby project developed as a proof of concept. The concept was proved not to work.\nIt collected up-to-date financial news from various sources across the web, and fed this along with current stock prices to a neural network which was supposed to advise which stocks to buy, sell and hold. However, this AI did not have any better results than not using it.\nWe then built a Next.JS website to display the results, but it was not completed.",
     "tags": ["Machine Learning","Next.js", "React", "REST", "Web Scraping"]
   },
   {
     "title": "ACS",
     "organisation": "1st Year Coursework",
-    "description": "My first year web-development coursework. It was a ticket ordering site for live events. Built from the ground up using Flask and Python, which I was not familar with, but the end result got me 94%, and was around half the module's worth.\nInteresting features included storage and editing of venues as well as events, ticket types for each venue, and a countdown when checking out, inspired by AXS and Ticketmaster.",
+    "description": "My first year web-development coursework. It was a ticket ordering site for live events. Built from the ground up using Flask and Python, which I was not familiar with, but the end result got me 94%, and was around half the module's worth.\nInteresting features included storage and editing of venues as well as events, ticket types for each venue, and a countdown when checking out, inspired by AXS and Ticketmaster.",
     "tags": ["Flask", "Python", "SQLite"]
   },
   {

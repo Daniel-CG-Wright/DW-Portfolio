@@ -9,7 +9,6 @@ import SkillTags from "./SkillTags";
 export default function ProjectModal({ project, show, onHide }: { project: Project | null; show: boolean; onHide: () => void; }): JSX.Element
 {
     const images = project?.images ?? [];
-    console.log(project);
     return (
         <>
             {project && 
@@ -38,7 +37,7 @@ export default function ProjectModal({ project, show, onHide }: { project: Proje
                             <Modal.Title as="h4" className="subtitle text-center text-muted">
                                 {project.organisation ?? "Personal Project"}
                             </Modal.Title>
-                            { project.url && <Modal.Title as="a" className="text-center" style={{ cursor: "pointer", maxWidth: "fit-content", marginInline: "auto"}}>
+                            { project.url && <Modal.Title as="a" href={project.url} target="_blank" rel="noopener noreferrer" className="text-center" style={{ cursor: "pointer", maxWidth: "fit-content", marginInline: "auto"}}>
                                 {project.url}
                             </Modal.Title>
                             }
@@ -49,14 +48,12 @@ export default function ProjectModal({ project, show, onHide }: { project: Proje
                         </Stack>
                     </Modal.Header>
                     <Modal.Body className="bottom-divider">
-                        <p>
-                            {project.description
-                            .split("\n")                // split at newline
-                            .filter(line => line.trim()) // remove empty lines
+                        {project.description
+                            .split("\n")
+                            .filter(line => line.trim())
                             .map((para, i) => (
                                 <p key={i}>{para}</p>
                             ))}
-                        </p>
                     </Modal.Body>
                     <Modal.Footer className="footer">
                         <SkillTags skills={project.tags} />
